@@ -16,13 +16,12 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
   sum_pollutant <- 0
   total_nrow <- 0
   
-  # Change the numneric id to include leading zeroes to align 
+  # Change the numeric id to include leading zeroes to align 
   # with the file names, e.g., 001.csv
   id_with_leading_zeros <- sprintf("%03d", id)
   
   for (file_id in id_with_leading_zeros) {
     file_path <- paste(directory, file_id, ".csv", sep = "")
-
     df <- read.csv(file_path)
 
     sum_pollutant = sum_pollutant + sum(df[, pollutant], na.rm = TRUE)
@@ -31,7 +30,7 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
   sum_pollutant / total_nrow
 }
 
-# Test code block for pollutantmean()
+## Test code block for pollutantmean()
 pollutantmean("./Data/specdata/", "sulfate", 1:10) # 4.064128
 pollutantmean("./Data/specdata/", "nitrate", 70:72) # 1.706047
 pollutantmean("./Data/specdata/", "nitrate", 23) # 1.280833
