@@ -30,7 +30,11 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
   sum_pollutant / total_nrow
 }
 
-## Test code block for pollutantmean()
-pollutantmean("./Data/specdata/", "sulfate", 1:10) # 4.064128
-pollutantmean("./Data/specdata/", "nitrate", 70:72) # 1.706047
-pollutantmean("./Data/specdata/", "nitrate", 23) # 1.280833
+# ## Test code block for pollutantmean()
+# pollutantmean("./Data/specdata/", "sulfate", 1:10) # 4.064128
+# pollutantmean("./Data/specdata/", "nitrate", 70:72) # 1.706047
+# pollutantmean("./Data/specdata/", "nitrate", 23) # 1.280833
+# 
+# ## Quiz test cases
+# pollutantmean("./Data/specdata/", "sulfate", 34) # 1.477
+# pollutantmean("./Data/specdata/", "nitrate") # 1.703
