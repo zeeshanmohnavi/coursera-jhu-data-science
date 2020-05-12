@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1589274065744.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "C1C20389",
+    "lastKnownWriteTime" : 1589274963,
+    "last_content_update" : 1589274963261,
+    "path" : "~/r-workspace/coursera-jhu-data-science/Scripts/extract_zip_content.R",
+    "project_path" : "Scripts/extract_zip_content.R",
+    "properties" : {
+        "cursorPosition" : "2,42",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
