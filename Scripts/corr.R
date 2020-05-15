@@ -103,3 +103,13 @@ corr <- function(directory, threshold = 0) {
 # print(c(n, round(cr, 4)))
 # # [1]  0.0000 -0.0190  0.0419  0.1901
 # # ---------------------------------------
+
+
+# ## ---------------------------------------
+# ## Code to check the performance of the function using system.time()
+# # On a single sensor data: the baseline case
+# # system.time(cr <- corr("./Data/specdata/", threshold = 1) )
+# 
+# # On the complete set of data files
+# # system.time(cr <- corr("./Data/specdata/", threshold = 1090) )
+# ## ---------------------------------------

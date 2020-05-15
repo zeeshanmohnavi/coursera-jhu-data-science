@@ -38,3 +38,13 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
 # ## Quiz test cases
 # pollutantmean("./Data/specdata/", "sulfate", 34) # 1.477
 # pollutantmean("./Data/specdata/", "nitrate") # 1.703
+
+
+# ## ---------------------------------------
+# ## Code to check the performance of the function using system.time()
+# # On a single sensor data: the baseline case
+# # system.time(pollutantmean("./Data/specdata/", "nitrate", 1))
+# 
+# # On the complete set of data files
+# # system.time(pollutantmean("./Data/specdata/", "nitrate", 1:332))
+# ## ---------------------------------------

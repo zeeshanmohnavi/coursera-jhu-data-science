@@ -85,3 +85,13 @@ complete <- function(directory, id = 1:332) {
 # use <- sample(332, 10)
 # print(cc[use, "nobs"])
 # # [1] 711 135  74 445 178  73  49   0 687 237
+
+
+# ## ---------------------------------------
+# ## Code to check the performance of the function using system.time()
+# # On a single sensor data: the baseline case
+# # system.time(oResult <- complete("./Data/specdata/", 1))
+# 
+# # On the complete set of data files
+# # system.time(oResult <- complete("./Data/specdata/", 1:332))
+# ## ---------------------------------------
